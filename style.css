@@ -9,7 +9,7 @@
 
 h1 {
   font-size: 45px;
-  font-weight: 550
+  font-weight: 550;
 }
 h3 {
   font-size: 30px;
@@ -21,20 +21,21 @@ a {
   text-decoration: none;
 }
 
-header a{
-    color: rgb(180, 178, 178);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 3.666667;
-    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    padding: 0 8px;
-    height: 44px;
-    opacity: .8;
-    white-space: nowrap;
-    letter-spacing: -.01em;
+header a {
+  color: rgb(180, 178, 178);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 3.666667;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 8px;
+  height: 44px;
+  opacity: 0.8;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
 }
 
 /* encabezado */
@@ -57,16 +58,16 @@ header {
   margin-bottom: 10px;
 }
 
-.full-width h1{
-    margin-bottom: 9px;
+.full-width h1 {
+  margin-bottom: 9px;
 }
 
-.full-width h3{
-    margin-bottom: 15px;
+.full-width h3 {
+  margin-bottom: 15px;
 }
 
-.full-width a{
-    margin-right: 30px;
+.full-width a {
+  margin-right: 30px;
 }
 /* seccion iphone azul */
 
@@ -75,79 +76,61 @@ header {
 }
 
 /* seccion iphone rosa */
-.iphonerosa{
-    background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_largetall_2x.jpg");
+.iphonerosa {
+  background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_largetall_2x.jpg");
 }
 
 /* regalos de san valentin */
-.regalosdesanvalentin{
-    background-image: url("https://www.apple.com/es/home/images/heroes/valentines-day-last-chance/hero_vday22__bt5gpd2vjafm_largetall_2x.jpg");
+.regalosdesanvalentin {
+  background-image: url("https://www.apple.com/es/home/images/heroes/valentines-day-last-chance/hero_vday22__bt5gpd2vjafm_largetall_2x.jpg");
 }
 
-.iphonerosa h1{
-    color: white;
+.small-boxes-container box1{
+    background-image: url(https://www.apple.com/v/home/aj/images/promos/watch-series-7/tile_watch__e9n11b6m6yq2_large_2x.jpg);
 }
 
-.iphonerosa h3{
-    color: #fec2eb;
+.iphonerosa h1 {
+  color: white;
+}
+
+.iphonerosa h3 {
+  color: #fec2eb;
 }
 
 .regalosdesanvalentin {
-    color: #602d62;
+  color: #602d62;
 }
 
 /* contenedor small boxes */
-
-.small-boxes-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.small-boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.small-box{
-    width: 45%;
-    margin-bottom: 20px;
+.contenedor-flex {
+  height: 6070px;
+  width: 100%;
+  padding-top: 40px;
+  margin-bottom: 30px;
+  background-color: white;
 }
-
-.small-box1{
-background-color: hotpink;
-}
-
-.small-box2{
-    background-color: blue
-}
-
-.small-box3{
-    background-color: cadetblue;
-}
-
-.small-box4{
-    background-color: coral;
-}
-
-
-
-
 /* medias queri */
 
-@media screen and (max-width:767px) {
-    .iphoneazul{
-        background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_small_2x.jpg");
-    }
+@media screen and (max-width: 767px) {
+  .iphoneazul {
+    background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_small_2x.jpg");
+  }
 
-    .iphonerosa{
-        background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_small_2x.jpg");
-    }
+  .iphonerosa {
+    background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_small_2x.jpg");
+  }
 
-    .regalosdesanvalentin{
-        background-image: url("https://www.apple.com/es/home/images/heroes/valentines-day-last-chance/hero_vday22__bt5gpd2vjafm_small_2x.jpg");
-    }
+  .regalosdesanvalentin {
+    background-image: url("https://www.apple.com/es/home/images/heroes/valentines-day-last-chance/hero_vday22__bt5gpd2vjafm_small_2x.jpg");
+  }
 
-    header a{
-        text-align: justify;
-    }
-
+  header a {
+    text-align: justify;
+  }
 }
-
-
-    
