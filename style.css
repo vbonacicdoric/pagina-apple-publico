@@ -127,9 +127,9 @@ header {
   width: 100%;
   padding-top: 10px;
   margin-bottom: 10px;
-  display:grid;
+  display: grid;
   justify-content: center;
-  /* grid-template-columns: repeat(2, 1); */
+  grid-template-columns: 1fr 1fr; 
   align-content: center;
 }
 
