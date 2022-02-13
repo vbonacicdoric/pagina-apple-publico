@@ -43,6 +43,7 @@ header a {
 header {
   height: 40px;
   background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
 
 /* seccion de pantalla 100% */
@@ -100,61 +101,101 @@ header {
 /* contenedor small boxes */
 
 .box1 {
-  background-image: url(https://www.apple.com/v/home/aj/images/promos/watch-series-7/tile_watch__e9n11b6m6yq2_large_2x.jpg);
+  background-image: url("https://www.apple.com/v/home/aj/images/promos/watch-series-7/tile_watch__e9n11b6m6yq2_large_2x.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 580px;
+  text-align: center;
 }
 
 .box2 {
   background-image: url("https://www.apple.com/euro/home/x/screens_alt/images/promos/shot-on-iphone/tile_soip__f0c6lef982em_large_2x.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 
 .box3 {
   background-image: url("https://www.apple.com/es/home/images/promos/watch-heart-month/promo_watch_heart__dlf8uc5h0kae_large_2x.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 
 .box4 {
   background-image: url("https://www.apple.com/v/home/aj/images/promos/watch-black-unity/promo_watch__fo7j0tnywi2q_large_2x.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 .box5 {
   background-image: url("https://www.apple.com/v/home/aj/images/promos/apple-fitness-plus-winter/tile_winter__bpktzwl6hsc2_large_2x.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 .box6 {
   background-image: url("https://www.apple.com/v/home/aj/images/promos/tv-plus-suspicion/promo_suspicion__cuan5534xoq6_large_2x.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  
 }
 
 /* contenedor grande donde van las 6 boxes */
-.small-boxes-container {
-  height: 670px;
-  width: 100%;
-  padding-top: 10px;
-  margin-bottom: 10px;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr; 
-  align-content: center;
+.small-boxes-container{
+  height: 624px;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin: 15px;
+  min-width: 350px;
+  text-align: center;
+  color: black;
 }
 
 .contenedor-flex {
-  height: 6070px;
-  width: 100%;
-  padding-top: 40px;
-  margin-bottom: 30px;
+  display: flex;
   background-color: white;
+  flex-wrap: wrap;
+  text-align: center;
+}
 }
 /* medias queri */
 
 @media screen and (max-width: 767px) {
   .iphoneazul {
-    background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_small_2x.jpg");
+    background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_mediumtall.jpg");
   }
 
   .iphonerosa {
-    background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_small_2x.jpg");
+    background-image: url("https://www.apple.com/v/home/aj/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_mediumtall.jpg");
   }
 
   .regalosdesanvalentin {
-    background-image: url("https://www.apple.com/es/home/images/heroes/valentines-day-last-chance/hero_vday22__bt5gpd2vjafm_small_2x.jpg");
+    background-image: url("https://www.apple.com/es/home/images/heroes/valentines-day-last-chance/hero_vday22__bt5gpd2vjafm_mediumtall.jpg");
   }
 
+  .box1{
+    background-image: url("https://www.apple.com/v/home/aj/images/promos/watch-series-7/tile_watch__e9n11b6m6yq2_medium_2x.jpg");
+  }
+
+  .box2{
+    background-image: url("https://www.apple.com/euro/home/x/screens_alt/images/promos/shot-on-iphone/tile_soip__f0c6lef982em_medium_2x.jpg");
+  }
+
+  .box3{
+    background-image: url("https://www.apple.com/es/home/images/promos/watch-heart-month/promo_watch_heart__dlf8uc5h0kae_large_2x.jpg");
+  }
+
+  .box4{
+    background-image: url("https://www.apple.com/v/home/aj/images/promos/watch-black-unity/promo_watch__fo7j0tnywi2q_medium_2x.jpg");
+  }
+  .box5{
+    background-image: url("https://www.apple.com/v/home/aj/images/promos/apple-fitness-plus-winter/tile_winter__bpktzwl6hsc2_medium_2x.jpg");
+  }
+  .box6{
+    background-image: url("https://www.apple.com/v/home/aj/images/promos/tv-plus-suspicion/promo_suspicion__cuan5534xoq6_medium.jpg");
+  }
   header a {
     text-align: justify;
   }
